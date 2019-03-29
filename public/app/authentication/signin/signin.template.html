@@ -1,0 +1,21 @@
+﻿<div id="container">
+
+    <h1>Login Page</h1>
+
+    <form (ngSubmit)="signin()">
+        <div>
+            <input type="text" [(ngModel)]="credentials.username" name="studentNumber" placeholder="Student Number">
+        </div>
+        <div>
+            <input type="password" [(ngModel)]="credentials.password" name="password" placeholder="Password">
+        </div>
+    
+        <div>
+            <a class="fl" [routerLink]="['../']"><button style="background:cornflowerblue">Back</button></a>
+            <button class="fl margin-left" style="background:cornflowerblue" type="submit">Sign in</button>
+            <div class="clear"></div>
+        </div>
+        
+        <span>{{errorMessage}}</span>
+    </form>
+</div>

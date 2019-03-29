@@ -1,0 +1,25 @@
+﻿<div id="container">
+    <a href="/"><img src="assets/img/logo.jpg" width="200" /></a>
+    <h1>Add a New Course</h1>
+
+    <form (ngSubmit)="create()" novalidate>
+        <div>
+            
+            <input type="text" required [(ngModel)]="course.courseCode" name="courseCode" placeholder="Course Code">
+
+           
+            <input type="text" required [(ngModel)]="course.courseName" name="courseName" placeholder="Course Name">
+
+            <input type="text" required [(ngModel)]="course.section" name="section" placeholder="Section">
+
+            <input type="text" required [(ngModel)]="course.semester" name="semester" placeholder="Semester">
+        </div>
+        <div>
+            <a class="fl" [routerLink]="['/courses']"><button style="background:cornflowerblue">Back</button></a>
+            <button class="fl margin-left" type="submit" style="background:cornflowerblue">Submit</button>
+    
+            <div class="clear"></div>
+        </div>
+        <strong id="error">{{errorMessage}}</strong>
+    </form>
+</div>

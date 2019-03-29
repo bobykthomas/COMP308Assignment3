@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<base href="/">
+	<style>
+	.centered {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -75px;
+		margin-left: -75px;
+	}
+	</style>
+</head>
+<body>
+	<mean-app>
+		<div class="centered"><img src="assets/img/loading.gif" width="150" /></div>
+	</mean-app>
+	
+	<script type="text/javascript">
+		window.user = <%= user || 'null' %>;
+	</script>
+	
+	<script src="lib/core-js/client/shim.min.js"></script>
+	<script src="lib/zone.js/dist/zone.js"></script>
+	<script src="lib/reflect-metadata/Reflect.js"></script>
+	<script src="lib/systemjs/dist/system.js"></script>
+	
+	<script src="systemjs.config.js"></script>
+	<script>
+		System.import('app').catch(function(err){ console.error(err); });
+	</script>
+</body>
+</html>

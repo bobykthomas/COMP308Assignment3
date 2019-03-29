@@ -1,0 +1,6 @@
+D:\Semester 4\Emerging Technologies\Github from Elza\COMP308Lab3\obj\Debug\COMP308Lab3.njsproj.CoreCompileInputs.cache
+D:\Semester 4\Emerging Technologies\Github from Elza\COMP308Lab3\bin\Microsoft.NodejsTools.WebRole.dll
+D:\Semester 4\Emerging Technologies\Github from Elza\COMP308Lab3\obj\Debug\COMP308Lab3.njsprojAssemblyReference.cache
+D:\Semester 4\Emerging Technologies\Github from Elza2\COMP308Lab3\obj\Debug\COMP308Lab3.njsprojAssemblyReference.cache
+D:\Semester 4\Emerging Technologies\Github from Elza2\COMP308Lab3\obj\Debug\COMP308Lab3.njsproj.CoreCompileInputs.cache
+D:\Semester 4\Emerging Technologies\Github from Elza2\COMP308Lab3\bin\Microsoft.NodejsTools.WebRole.dll

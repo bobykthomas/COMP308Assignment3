@@ -1,0 +1,18 @@
+﻿<div id="container" *ngIf="course && course.creator" style="width: 400px;">
+    <a href="/"><img src="assets/img/logo.jpg" width="200" /></a>
+    <h1>View Course</h1>
+    <small>Posted on {{course.created}} by {{ course.creator.fullName }}</small><br /><br />
+
+    <div>
+        <b>Course Code:</b> {{course.courseCode}}<br /><br />
+        <b>Course Name:</b> {{course.courseName}}<br /><br />
+        <b>Section:</b> {{course.section}}<br /><br />
+        <b>Semester:</b> {{course.semester}}<br /><br />
+    </div>
+    <div>
+        <a class="fl" [routerLink]="['/courses']"><button style="background:cornflowerblue">Back</button></a>
+        <button class="fl margin-left deleteButton" (click)="delete()" style="background:cornflowerblue">Delete</button>
+        <div class="clear"></div>
+    </div>
+    <strong id="error">{{errorMessage}}</strong>
+</div>

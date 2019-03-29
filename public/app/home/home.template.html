@@ -1,0 +1,40 @@
+﻿<div *ngIf="user">
+    <div style="width: 500px; margin: 10% auto">
+        <div align="center">
+            <h1>Welcome {{user.firstName}}</h1>
+        </div>
+
+        <div align="center">
+            <a [routerLink]="['/courses']" class="fl"><button style="background:cornflowerblue">View Courses</button></a>
+        </div>
+  
+        <div align="center">
+            <a [routerLink]="['/courses/create']" class="fl margin-left"><button style="background:cornflowerblue">Add course</button></a>
+        </div>
+
+
+        <div align="center">
+            <a href="/api/auth/signout" class="fl margin-left"><button style="background:cornflowerblue">Log out          </button></a>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div *ngIf="!user">
+    
+    <div style="width: 450px; margin: 10% auto;">
+
+        <div align="center">
+             <h1>Welcome to your Course Helper</h1>
+        </div>
+        <div align="center">
+            <a [routerLink]="['/authentication/signup']"><button style="background:cornflowerblue">Sign up</button></a>
+        </div>
+        <div align="center">
+            <a [routerLink]="['/authentication/signin']"><button style="background:cornflowerblue">Sign in</button></a>
+        </div>
+
+    </div>
+</div>
